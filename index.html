@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Counter</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: black;
+            color: white;
+            display: grid;
+            place-items: center;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        p {
+            font-size: 100px;
+        }
+
+        button {
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+<body>
+   <section>
+     <h1>Contador</h1>
+     <p id="resultado"></p>
+     <button onclick="aumentar()">+</button>
+     <button onclick="diminuir()">-</button>
+   </section>
+
+   <script>
+
+    // estado da minha aplicação
+      let numero = 0
+
+    // alteradores de estado da aplicação 
+
+      function aumentar() {
+        numero++
+        mostrarNaTela()
+      }
+      function diminuir() {
+        numero--
+        mostrarNaTela()
+      }
+
+    // jogar o estado da aplicação na tela
+      function mostrarNaTela() {
+        const p = document.querySelector("#resultado")
+        p.innerText = numero
+      }
+
+    // iniciar
+    mostrarNaTela()
+
+   </script>
+</body>
+</html>
