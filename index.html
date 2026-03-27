@@ -13,29 +13,40 @@
 
         body {
             min-height: 100vh;
-            background: black;
+            background: linear-gradient(50deg, #da87f3d8, #330668e3, #150724e3);
             color: white;
             display: grid;
             place-items: center;
         }
 
         section {
-            background: rgba(24, 45, 46, 0.801);
+            background: rgba(16, 1, 26, 0.801);
             padding: 50px;
             border-radius: 5px;
             text-align: center;
+            box-shadow: 9px 18px 25px rgb(5, 0, 5);
         }
 
         button {
-            font-size: 35px;
-            width: 100px;
-            height: 80px;
-           
+             font-size: 35px;
+             align-items: center;
+             justify-content: space-around;
+             height: 80px;
+             width: 80px;
+             border-radius: 5px;
+             box-shadow: 4px 5px 16px rgba(199, 197, 197, 0.5);
+             cursor: pointer;
+             transition: tranform 0.1s ease, background-color 0.2s;
+        }
+
+        button:active {
+          transform: scale(0.95);
+          background-color: rgba(59, 52, 52, 0.5);
         }
 
         p {
             font-size: 200px;
-            color: rgb(190, 218, 255);
+            color: rgb(253, 254, 255);
             text-align: center;
         }
 
@@ -43,7 +54,7 @@
        
 
         h1 {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: 'Times New Roman', Times, serif
             color: rgb(255, 255, 255);
             font-size: 50px;
                     
